@@ -18,10 +18,7 @@ const userSchema = new mongoose.Schema({
         unique: true,
         trim: true
     },
-    profileImage: {
-        type: String,
-        required: true
-    },
+    
     phone: {
         type: String,
         required: true,
@@ -32,43 +29,8 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    address: {
-        shipping: {
-            street: {
-                type: String,
-                required: true,
-                trim: true
-            },
-            city: {
-                type: String,
-                required: true,
-                trim: true
-            },
-            pincode: {
-                type: Number,
-                required: true,
-                trim: true
-            }
-        },
-        billing: {
-            street: {
-                type: String,
-                required: true,
-                trim: true
-            },
-            city: {
-                type: String,
-                required: true,
-                trim: true
-            },
-            pincode: {
-                type: Number,
-                required: true,
-                trim: true
-            }
-
-        }
-    },
+    
+     
 
 }, { timestamps: true })
 
